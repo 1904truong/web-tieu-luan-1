@@ -1,5 +1,6 @@
 {
-  "name": "travel-fixed",
+  "name": "web-tieu-luan",
+  "homepage": "https://1904truong.github.io/web-tieu-luan",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,10 +8,13 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "predeploy": "npm run build",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "gh-pages": "^6.2.0",
     "react": "^18.3.1",
     "react-carousel": "^4.3.0",
     "react-dom": "^18.3.1",
